@@ -29,7 +29,6 @@
   <section id="welcome">
     <h2>Welcome to my Portfolio Webpage</h2>
     <div class="container">
-
     </div>
   </section>
   <section id="about-me">
@@ -42,7 +41,6 @@
         </div>
         <div class="text-content">
           <p>Hello! My name is Luke Keveloh. I am a Full-Stack Web Developer.</p>
-
         </div>
       </div>
 
@@ -56,21 +54,23 @@
         <div class="project-card">
           <h3>GasPal</h3>
           <img src="imgs/gaspal2.png" alt="Project 1 Image">
-          <p>Brief description of Project 1. Mention the technologies used and the problem it solves.</p>
+          <p>Find the cheapest gas, view gas prices in your state or county, estimate your road trips fuel cost, and
+            more!</p>
+          <p>Made with SpringBoot, Java, HTML, CSS, and JavaScript</p>
           <a href="#">Learn More</a>
         </div>
 
         <div class="project-card">
           <h3>Poroscope</h3>
           <img src="imgs/poroscope.png" alt="Project 2 Image">
-          <p>Brief description of Project 2. Mention the technologies used and the problem it solves.</p>
+          <p></p>
           <a href="#">Learn More</a>
         </div>
 
         <div class="project-card">
-          <h3>Project Title 3</h3>
+          <h3></h3>
           <img src="" alt="Project 3 Image">
-          <p>Brief description of Project 3. Mention the technologies used and the problem it solves.</p>
+          <p></p>
           <a href="#">Learn More</a>
         </div>
 
@@ -80,12 +80,10 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-
       <div class="content">
         <div class="content-text">
           <a href="#" id="viewResumeLink">View my resume</a>.
         </div>
-
       </div>
     </div>
   </section>
@@ -103,18 +101,15 @@
   const modal = document.getElementById("resumeModal");
   const resumeLink = document.getElementById("viewResumeLink");
 
-  // When the user clicks the link, open the modal 
   resumeLink.onclick = function () {
     modal.style.display = "block";
     return false;
   }
 
-  // When the user clicks on (x), close the modal
   document.querySelector(".close").onclick = function () {
     modal.style.display = "none";
   }
 
-  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
